@@ -103,7 +103,7 @@ img {
     grid-template-rows: auto auto auto;
     justify-content: center;
     z-index: 2;
-    margin-top: 18vh;
+    margin-top: calc(50vh - 200px);
 }
 
 #header:not(#splash #header) {
