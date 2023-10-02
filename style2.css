@@ -1,0 +1,105 @@
+/* IMPORT TYPEFACES */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@12..96&display=swap');
+
+@font-face {
+    font-family: title;
+    src: url(./assets/PicNic-Regular.woff2);
+}
+
+/* UNIVERSALS */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* LINKS */
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+a.active {
+    cursor: default;
+}
+
+a:not(.active) {
+    cursor: pointer;
+}
+
+a:not(.active):hover {
+    text-shadow: 0px 1px 6px rgba(234, 0, 122);
+}
+
+/* MADELINE MONEYPENNY */
+
+#madeline {
+    transform: rotate(2.53deg);
+}
+  
+#moneypenny {
+    transform: rotate(-3.15deg);
+    position: relative;
+    left: 0.7em;
+}
+
+/* MOVEMENT AND BLUR */
+
+#movement {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: 
+        linear-gradient(
+        rgba(234, 0, 122, 0.5),
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 1)
+        ),
+        url(https://cdn.glitch.global/3fe2cacb-d280-4b91-a604-1232686eeecb/c1.gif?v=1694013670813);
+    image-rendering: pixelated;
+    background-position: center;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 200ms;
+}
+
+#blur {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* CONTENT */
+
+#content {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    padding: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
