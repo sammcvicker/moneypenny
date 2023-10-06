@@ -210,7 +210,7 @@ img {
 
 #splash h1 {
     grid-row: 1;
-    font-size: min(15vw, 64pt);
+    font-size: min(14vw, 64pt);
 }
 
 #madeline {
@@ -243,6 +243,8 @@ h1 {
     margin: auto;
     margin-top: 50px;
     grid-row: 1;
+    position: relative;
+    left: -5px;
 }
   
 /* #socials div {
