@@ -45,6 +45,10 @@ a.active:not(#name) {
     opacity: 0.5;
 }
 
+#name:not(.active):hover {
+    text-shadow: 0px 2px 10px rgba(234, 0, 122, 0.8);
+}
+
 /* MOVEMENT AND BLUR */
 
 #movement {
@@ -150,23 +154,12 @@ img {
 
     #socials {
         margin-right: 50px;
+        padding-bottom: 100px;
     }
 
-    #about {
+    /* #about, #photos, #videos, #shows {
         padding-top: 100px;
-    }
-
-    #photos {
-        padding-top: 100px;
-    }
-
-    #videos {
-        padding-top: 100px;
-    }
-
-    #shows {
-        padding-top: 100px;
-    }
+    } */
 
 }
 
@@ -199,23 +192,12 @@ img {
         margin: auto;
         margin-top: 10px;
         grid-row: 3;
+        padding-bottom: 50px;
     }
 
-    #about {
+    /* #about, #photos, #videos, #shows {
         padding-top: 50px;
-    }
-
-    #photos {
-        padding-top: 50px;
-    }
-
-    #videos {
-        padding-top: 50px;
-    }
-
-    #shows {
-        padding-top: 50px;
-    }
+    } */
 
 }
 
@@ -228,7 +210,7 @@ img {
 
 #splash h1 {
     grid-row: 1;
-    font-size: 64pt;
+    font-size: min(15vw, 64pt);
 }
 
 #madeline {
@@ -279,8 +261,8 @@ h1 {
 }
   
 #socials img:hover {
-    background-color: rgba(234, 0, 122);
-    box-shadow: 0px 5px 15px rgba(234, 0, 122);
+    background-color: rgba(234, 0, 122, 0.5);
+    box-shadow: 0px 2px 15px rgba(234, 0, 122, 0.5);
 }
 
 #socials div:first-child img {
@@ -299,7 +281,7 @@ h1 {
 
 #about img {
     max-width: 538px;
-    min-width: 300px;
+    width: calc(100vw - 50px);
 }
 
 #about p {
@@ -318,13 +300,15 @@ h1 {
     align-items: center;
     justify-content: space-evenly;
     gap: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
     max-width: 1600px;
     margin: auto;
 }
 
 #photos img {
     max-width: 400px;
-    width: 100vw;
+    width: calc(100vw - 50px);
     height: auto;
 }
 
@@ -339,15 +323,18 @@ h1 {
 }
 
 #videos iframe {
-    max-width: 563px;
     margin: 0;
-    width: 100vw;
+    max-width: 563px;
+    width: calc(100vw - 50px);
     height: 300px;
 }
 
 #shows {
-    max-width: 350px;
+    max-width: 500px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: auto;
+    background-color: transparent;
 }
 
 #shows div {
