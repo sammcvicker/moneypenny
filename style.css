@@ -154,12 +154,12 @@ img {
 
     #socials {
         margin-right: 50px;
-        padding-bottom: 100px;
+        /* padding-bottom: 100px; */
     }
 
-    /* #about, #photos, #videos, #shows {
+    #about, #photos, #videos, #shows {
         padding-top: 100px;
-    } */
+    }
 
 }
 
